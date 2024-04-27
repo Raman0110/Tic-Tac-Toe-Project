@@ -1,0 +1,85 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+nav ul{
+    list-style-type: none;
+}
+nav{
+    height: 68px;
+    background-color: purple;
+    color: white;
+    font-size: 24px;
+    display: flex;
+    align-items: center;
+    padding: 0 12px;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif
+}
+
+.gameContainer{
+    display: flex;
+    justify-content: center;
+    margin-top: 50px;
+}
+.container{
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    display: grid;
+    grid-template-rows: repeat(3, 10vw);
+    grid-template-columns: repeat(3, 10vw);
+}
+.box{
+    border: 2px solid black;
+    font-size: 8vw;
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.box:hover{
+    background-color: lightgreen;
+
+}
+.gameInfo{
+    margin-left: 1rem;
+    padding: 16px 34px;
+    background-color: purple;
+    color: white;
+    border-radius: 8px;
+}
+.gameInfo h1{
+    margin: 1rem 0;
+}
+.info{
+    font-size: 24px;
+    text-decoration: underline;
+}
+.imgbox img{
+    width:  0;
+    transition: width 1s ease-out;
+}
+.br-0{
+    border-right: 0;
+}
+.bl-0{
+    border-left: 0;
+}
+.bt-0{
+    border-top: 0;
+}
+.bb-0{
+    border-bottom: 0;
+}
+#reset{
+    outline: none;
+    font-size: 18px;
+    margin-top: 16px;
+    padding: 5px 16px;
+    cursor: pointer;
+    border: none;
+    background-color: green;
+    color: white;
+    border-radius: 5px;
+    display: block;
+}
